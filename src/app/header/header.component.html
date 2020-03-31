@@ -1,0 +1,22 @@
+<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+<mat-toolbar color = "primary">
+  <span>
+    <a routerLink="/" style = "font-family: 'Shadows Into Light', cursive; font-size: 30px; color: black; font-weight: 500;">myPosts</a>
+  </span>
+  <span class="spacer"></span>
+  <ul>
+    <li *ngIf="userIsAuthenticated">
+      <a style="font-family: 'Amatic SC', cursive; color: rgb(171, 233, 71); font-size: 20px;" mat-button routerLink="/create" routerLinkActive="mat-accent" >newPost</a>
+    </li>
+    <li *ngIf="!userIsAuthenticated">
+      <a style="font-family: 'Amatic SC', cursive; color: rgb(171, 233, 71); font-size: 20px;" mat-button routerLink="/auth/login" routerLinkActive="mat-accent">login</a>
+    </li>
+    <li *ngIf="!userIsAuthenticated">
+      <a style="font-family: 'Amatic SC', cursive; color: rgb(171, 233, 71); font-size: 20px;" mat-button routerLink="/auth/signup" routerLinkActive="mat-accent">signUp</a>
+    </li>
+    <li *ngIf="userIsAuthenticated">
+      <button style="font-family: 'Amatic SC', cursive; color: rgb(233, 130, 71); font-size: 20px;" mat-button (click)="onLogout()">signOut</button>
+    </li>
+  </ul>
+</mat-toolbar>

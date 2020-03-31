@@ -1,0 +1,22 @@
+#name {
+  text-align: center;
+  margin-top: 5%;
+}
+
+mat-card {
+  height: 50%;
+  width: 50%;
+  position: relative;
+  left: 25%;
+  margin-top: 5%;
+  background: rgb(94,169,168);
+background: linear-gradient(90deg, rgba(94,169,168,0.45171572046787467) 100%, rgba(88,138,100,0) 100%, rgba(2,0,36,1) 100%, rgba(96,178,186,0) 100%, rgba(0,212,255,1) 100%, rgba(84,116,51,1) 100%);
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+mat-spinner {
+  margin: auto;
+}
